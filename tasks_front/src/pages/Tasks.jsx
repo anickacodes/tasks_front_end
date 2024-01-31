@@ -43,8 +43,8 @@ const Tasks = ({user, token}) => {
     return (
        <Container>
         <h2>Task List</h2>
-        <Table striped bordered hover responsive className="table-sm">
-        <thead>
+        <Table striped bordered hover responsive className="table-warning table-md border-success">
+        <thead className="table-dark">
             <tr>
                 <th>Title</th>
                 <th>Description</th>

@@ -1,6 +1,12 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: #333a42;
-color: rgb(0, 225, 255);
+  /* background-color: #333a42;*/
+
+  color: rgb(0, 225, 255);
+}
+
+body {
+background-image: url(src/assets/calico_cat.jpg);
+
 }

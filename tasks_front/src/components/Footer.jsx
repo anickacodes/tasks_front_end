@@ -6,9 +6,10 @@ const Footer = () => {
 
 
     return(
-        <CardFooter variant='primary'>
+        <CardFooter className="position-absolute bottom-0 start-50 translate-middle-x" variant='primary'>
             <h3>🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾</h3>
-            <h3>issa foooooter somewhere</h3>
+            <h3>itsafooooter</h3>
+            {/* <img src='src/assets/calico_cat.jpg'/> */}
             <h3>🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾</h3>
         </CardFooter>
     )
