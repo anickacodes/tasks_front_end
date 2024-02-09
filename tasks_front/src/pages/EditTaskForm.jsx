@@ -12,7 +12,7 @@ const EditTaskForm = ({ user, token }) => {
     completed: false,
     user_id: user.user_id,
   });
-
+  
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
