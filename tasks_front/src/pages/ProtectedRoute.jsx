@@ -10,3 +10,5 @@ const ProtectedRoute = ({ element: Component, isAuthenticated, user, token }) =>
 };
 
 export default ProtectedRoute;
+
+// replace replaces back history to login instead of tasks

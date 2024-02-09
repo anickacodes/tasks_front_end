@@ -6,10 +6,10 @@ const Footer = () => {
 
 
     return(
-        <CardFooter className="position-absolute bottom-0 start-50 translate-middle-x" variant='primary'>
-            <h3>🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾</h3>
-            <h3>itsafooooter</h3>
-            {/* <img src='src/assets/calico_cat.jpg'/> */}
+        <CardFooter className="d-block p-4 bg-primary text-white blockquote-footer border border-3 border-info rounded-4 position-absolute bottom-0 start-50 translate-middle-x" >
+            <h3 className="">🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾</h3>
+            <h3 className="">itsafooooter</h3>
+         
             <h3>🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾🦶🏾</h3>
         </CardFooter>
     )

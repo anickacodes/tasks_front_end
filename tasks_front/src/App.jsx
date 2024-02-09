@@ -9,6 +9,8 @@ import Login from "./pages/Login";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import Tasks from "./pages/Tasks";
 import Footer from "./components/Footer";
+import NewTaskForm from "./pages/NewTaskForm";
+import EditTaskForm from "./pages/EditTaskForm";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -38,6 +40,22 @@ const App = () => {
             />
           }
         />
+        <Route path="/new"
+          element={
+            <ProtectedRoute
+              element={NewTaskForm}
+              isAuthenticated={!!user && !!token}
+              user={user}
+              token={token}
+            />} />
+             <Route path="/tasks/:taskId"
+          element={
+            <ProtectedRoute
+              element={EditTaskForm}
+              isAuthenticated={!!user && !!token}
+              user={user}
+              token={token}
+            />} />
       </Routes>
       <Footer/>
     </div>

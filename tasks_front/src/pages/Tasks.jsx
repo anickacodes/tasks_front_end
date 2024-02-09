@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import { Button, Container, Table } from "react-bootstrap"
+import { Button, Container, Nav, Table } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 
 const Tasks = ({user, token}) => {
@@ -43,6 +44,7 @@ const Tasks = ({user, token}) => {
     return (
        <Container>
         <h2>Task List</h2>
+        <Nav.Link as={Link} to='/new'> <Button variant='outline-primary' style={{marginBottom: '7px'}}> Create Task </Button> </Nav.Link>
         <Table striped bordered hover responsive className="table-warning table-md border-success">
         <thead className="table-dark">
             <tr>
@@ -55,7 +57,7 @@ const Tasks = ({user, token}) => {
         <tbody>
             {tasks.length > 0 && sortedTasks.map((task) => (
                 <tr key={task.task_id}>
-                    <td>{task.title}</td>
+                    <td><Nav.Link as={Link} to={`/tasks/${task.task_id}`}> {task.title}</Nav.Link></td>
                     <td>{task.description}</td>
                     <td>{task.completed ? 'Completed' : 'Incomplete'}</td>
                     <td>
